@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { routing} from './app.routing';
 import { WhiteBoardComponent } from './white-board/white-board.component';
 import { CourseGridComponent } from './course-grid/course-grid.component';
+import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CourseGridComponent } from './course-grid/course-grid.component';
     RegisterComponent,
     ProfileComponent,
     WhiteBoardComponent,
-    CourseGridComponent
+    CourseGridComponent,
+    CourseViewerComponent
   ],
   imports: [
     BrowserModule,

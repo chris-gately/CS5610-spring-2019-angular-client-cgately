@@ -11,4 +11,9 @@ export class CourseServiceClient {
   findModulesForCourse = courseId =>
     fetch(this.COURSE_URL + courseId + '/module')
       .then(response => response.json())
+
+  findCourseById(courseId) {
+    return fetch(this.COURSE_URL + '/' + courseId)
+      .then(response => response.json());
+  }
 }
