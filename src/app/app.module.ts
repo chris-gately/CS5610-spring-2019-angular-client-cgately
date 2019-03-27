@@ -11,6 +11,8 @@ import { routing} from './app.routing';
 import { WhiteBoardComponent } from './white-board/white-board.component';
 import { CourseGridComponent } from './course-grid/course-grid.component';
 import { CourseViewerComponent } from './course-viewer/course-viewer.component';
+import { ModuleListComponent } from './module-list/module-list.component';
+import {ModuleServiceClient} from '../services/ModuleServiceClient';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,15 @@ import { CourseViewerComponent } from './course-viewer/course-viewer.component';
     ProfileComponent,
     WhiteBoardComponent,
     CourseGridComponent,
-    CourseViewerComponent
+    CourseViewerComponent,
+    ModuleListComponent
   ],
   imports: [
     BrowserModule,
     routing
   ],
-  providers: [CourseServiceClient],
+  providers: [CourseServiceClient,
+    ModuleServiceClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

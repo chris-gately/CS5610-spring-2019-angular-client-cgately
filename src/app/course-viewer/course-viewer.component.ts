@@ -9,7 +9,7 @@ import {CourseServiceClient} from '../../services/CourseServiceClient';
 })
 export class CourseViewerComponent implements OnInit {
 
-  course = null;
+  course;
   constructor(private service: CourseServiceClient,
               private route: ActivatedRoute) {
     this.route.params.subscribe(params => this.loadCourse(params.courseId));
