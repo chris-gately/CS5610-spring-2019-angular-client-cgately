@@ -2,11 +2,13 @@ import {Injectable} from '@angular/core';
 
 @Injectable()
 export class CourseServiceClient {
+  COURSE_URL = 'http://localhost:8080/api/course';
+  
   findAllCourses = () =>
-    fetch('http://localhost:8080/api/course')
+    fetch(this.COURSE_URL)
       .then(response => response.json())
 
   findModulesForCourse = courseId =>
-    fetch('http://localhost:8080/api/course/' + courseId + '/module')
+    fetch(this.COURSE_URL + courseId + '/module')
       .then(response => response.json())
 }

@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { routing} from './app.routing';
+import { WhiteBoardComponent } from './white-board/white-board.component';
+import { CourseGridComponent } from './course-grid/course-grid.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { routing} from './app.routing';
     CourseNavigatorComponent,
     LoginComponent,
     RegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    WhiteBoardComponent,
+    CourseGridComponent
   ],
   imports: [
     BrowserModule,
