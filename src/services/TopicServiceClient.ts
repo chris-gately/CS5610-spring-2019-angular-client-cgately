@@ -1,6 +1,6 @@
 export class TopicServiceClient {
-  TOPIC_URL = 'http://localhost:8080/api/lesson/';
-  HOST_URL = 'http://localhost:8080/api';
+  TOPIC_URL = 'https://thawing-ridge-10669.herokuapp.com/api/lesson/';
+  HOST_URL = 'https://thawing-ridge-10669.herokuapp.com/api';
 
   findTopicsForLesson(lessonId) {
     return fetch(this.TOPIC_URL + lessonId + '/topic')

@@ -1,6 +1,6 @@
 export class LessonServiceClient {
-  LESSON_URL = 'http://localhost:8080/api/module/';
-  HOST_URL = 'http://localhost:8080/api';
+  LESSON_URL = 'https://thawing-ridge-10669.herokuapp.com/api/module/';
+  HOST_URL = 'https://thawing-ridge-10669.herokuapp.com/api';
 
   findLessonsForModule(moduleId) {
     return fetch(this.LESSON_URL + moduleId + '/lesson')

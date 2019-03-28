@@ -1,6 +1,6 @@
 export class ModuleServiceClient {
-  MODULE_URL = 'http://localhost:8080/api/course/COURSE_ID/module';
-  HOST_URL = 'http://localhost:8080/api';
+  MODULE_URL = 'https://thawing-ridge-10669.herokuapp.com/api/course/COURSE_ID/module';
+  HOST_URL = 'https://thawing-ridge-10669.herokuapp.com/api';
 
   findModulesForCourse(courseId) {
     return fetch(this.MODULE_URL.replace('COURSE_ID', courseId))
