@@ -14,6 +14,7 @@ import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import {ModuleServiceClient} from '../services/ModuleServiceClient';
 import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
+import {LessonServiceClient} from '../services/LessonServiceClient';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
     routing
   ],
   providers: [CourseServiceClient,
-    ModuleServiceClient],
+    ModuleServiceClient,
+    LessonServiceClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
