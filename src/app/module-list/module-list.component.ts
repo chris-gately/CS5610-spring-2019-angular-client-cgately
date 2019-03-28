@@ -19,7 +19,7 @@ export class ModuleListComponent implements OnInit {
 
   loadModules(courseId) {
     this.courseId = courseId;
-    this.service.findAllModules(courseId).then(modules => this.modules = modules);
+    this.service.findModulesForCourse(courseId).then(modules => this.modules = modules);
   }
 
   setParams(params) {

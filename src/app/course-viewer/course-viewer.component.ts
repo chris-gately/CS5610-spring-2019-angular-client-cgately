@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {CourseServiceClient} from '../../services/CourseServiceClient';
+import {Course} from '../models/course.model.client';
 
 @Component({
   selector: 'app-course-viewer',
@@ -8,8 +9,7 @@ import {CourseServiceClient} from '../../services/CourseServiceClient';
   styleUrls: ['./course-viewer.component.css']
 })
 export class CourseViewerComponent implements OnInit {
-
-  course;
+  course: Course = new Course();
   constructor(private service: CourseServiceClient,
               private route: ActivatedRoute) {
     this.route.params.subscribe(params => this.loadCourse(params.courseId));
